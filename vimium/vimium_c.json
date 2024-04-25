@@ -1,0 +1,72 @@
+{
+	"name": "Vimium C",
+	"@time": "4/25/2024, 3:12:00 PM",
+	"time": 1714029120664,
+	"environment": {
+		"extension": "1.99.994",
+		"platform": "linux",
+		"chromium": 123
+	},
+	"exclusionRules": [
+		{
+			"passKeys": "",
+			"pattern": ":https://mail.google.com/"
+		},
+		{
+			"passKeys": "t ",
+			"pattern": ":https://github.com/"
+		}
+	],
+	"keyLayout": 2,
+	"keyMappings": [
+		"#!no-check",
+		"map co closeOtherTabs",
+		"map cl closeTabsOnLeft",
+		"map cr closeTabsOnRight",
+		"map st autoOpen keyword=\"gt\"",
+		"map sg autoOpen keyword=\"g\"",
+		"map sb autoOpen keyword=\"b\"",
+		""
+	],
+	"searchEngines": [
+		"g: https://www.google.com/search?q=%s Google",
+		"gi: https://www.google.com/search?tbm=isch&q=%s Google Images",
+		"gm: https://www.google.com/maps?q=%s Google Maps",
+		"gs|gx: https://scholar.google.com/scholar?q=$s \\",
+		"  scholar.google.com re=/^(?:\\.[a-z]{2,4})?\\/scholar\\b.*?[#&?]q=([^#&]*)/i\\",
+		"  blank=https://scholar.google.com/ 谷歌学术",
+		"recent: https://www.google.com/search?hl=en&tbo=1&tbs=qdr:y&q=%s Google (last year only)",
+		"gt: https://translate.google.com/?source=osdd#auto|auto|%s Google Translator",
+		"w: https://en.wikipedia.org/wiki/Special:Search?search=%s Wikipedia",
+		"d: https://duckduckgo.com/?q=%s DuckDuckGo",
+		"a: https://www.amazon.com/exec/obidos/external-search/?field-keywords=%s&mode=blended Amazon",
+		"b: https://www.bing.com/search?setmkt=en-GB&q=%s Bing",
+		"gh: https://github.com/search?q=%s GitHub",
+		"hn: https://www.hnsearch.com/search#request/submissions&q=%s&start=0 HackerNews",
+		"so: https://stackoverflow.com/search?q=%s StackOverflow",
+		"su: https://superuser.com/search?q=%s SuperUser",
+		"yt: https://www.youtube.com/results?search_query=%s YouTube",
+		"",
+		"# Use google to search the current site you're on",
+		"site: javascript:location='https://www.google.com/search?num=100&q=site:'+escape(location.hostname)+'+%s'",
+		"",
+		"bd: https://www.baidu.com/s?ie=utf-8&wd=%s blank=https://www.baidu.com/ 百度",
+		"bm: https://api.map.baidu.com/geocoder?output=html&address=%s&src=vimium-c blank=https://map.baidu.com/",
+		"bx: https://xueshu.baidu.com/s?ie=utf-8&wd=%s blank=https://xueshu.baidu.com/ 百度学术",
+		"",
+		"book: https://search.douban.com/book/subject_search?search_text=%s 豆瓣读书",
+		"db: https://www.douban.com/search?q=%s 豆瓣",
+		"isbn: https://book.douban.com/isbn/%s ISBN搜索",
+		"",
+		"bili: https://search.bilibili.com/all?keyword=%s blank=https://www.bilibili.com/ 哔哩哔哩",
+		"tb: https://s.taobao.com/search?ie=utf8&q=%s \\",
+		"  blank=https://www.taobao.com/ 淘宝",
+		"jd: https://search.jd.com/Search?enc=utf-8&keyword=%s\\",
+		"  blank=https://jd.com/ 京东",
+		"",
+		"m: vimium://math\\ $S re= 计算器",
+		""
+	],
+	"searchUrl": "https://www.google.com/search?q=$s Google",
+	"vimSync": true
+}
